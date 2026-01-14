@@ -1,0 +1,830 @@
+{
+  "data": [
+    {
+      "x": [
+        -15.467463055207757
+      ],
+      "y": [
+        5.415941528807785
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 20,
+        "color": "red",
+        "symbol": "square",
+        "line": {
+          "width": 2,
+          "color": "darkred"
+        }
+      },
+      "name": "Depot",
+      "text": [
+        "Depot (0)"
+      ],
+      "hoverinfo": "text"
+    },
+    {
+      "x": [
+        -14.671127037022202,
+        -13.85703263493312,
+        -10.376456253101182,
+        -9.775657061418451,
+        -7.683084150618362,
+        -5.937720861436585,
+        -4.268053388367796,
+        -1.4581549142858126,
+        -1.1941224269865376,
+        1.755490549952241,
+        4.308964832914387,
+        6.871166830005118,
+        6.591127196914235,
+        10.558658940546144,
+        11.623433848384279,
+        8.041665588991664,
+        13.352544960977433,
+        12.28287930078079,
+        9.302939733911506
+      ],
+      "y": [
+        -5.031505348903534,
+        -0.5486551269941008,
+        5.475910910684014,
+        0.47105990450938046,
+        -8.13005981539072,
+        -5.604082640894357,
+        -0.6252070320980665,
+        -8.437173155716193,
+        3.717040019292567,
+        -3.619304110856082,
+        -7.9949906669599375,
+        -6.009438132557107,
+        0.6578255230530361,
+        -3.611578512181918,
+        0.09021959233876017,
+        7.627616393594265,
+        4.389351919958786,
+        8.808138355994783,
+        12.958890394318638
+      ],
+      "mode": "markers+text",
+      "marker": {
+        "size": 12,
+        "color": "lightblue",
+        "line": {
+          "width": 2,
+          "color": "darkblue"
+        }
+      },
+      "text": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "10",
+        "11",
+        "12",
+        "13",
+        "14",
+        "15",
+        "16",
+        "17",
+        "18",
+        "19"
+      ],
+      "textposition": "top center",
+      "textfont": {
+        "size": 10,
+        "color": "black"
+      },
+      "name": "Customers",
+      "hovertext": [
+        "Customer 1",
+        "Customer 2",
+        "Customer 3",
+        "Customer 4",
+        "Customer 5",
+        "Customer 6",
+        "Customer 7",
+        "Customer 8",
+        "Customer 9",
+        "Customer 10",
+        "Customer 11",
+        "Customer 12",
+        "Customer 13",
+        "Customer 14",
+        "Customer 15",
+        "Customer 16",
+        "Customer 17",
+        "Customer 18",
+        "Customer 19"
+      ],
+      "hoverinfo": "text"
+    },
+    {
+      "x": [
+        -15.467463055207757,
+        -14.671127037022202,
+        -15.467463055207757
+      ],
+      "y": [
+        5.415941528807785,
+        -5.031505348903534,
+        5.415941528807785
+      ],
+      "mode": "lines",
+      "line": {
+        "color": "rgb(31, 119, 180)",
+        "width": 2
+      },
+      "name": "Route 1",
+      "hoverinfo": "name"
+    },
+    {
+      "x": [
+        -15.06929504611498
+      ],
+      "y": [
+        0.19221808995212575
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(31, 119, 180)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -15.06929504611498
+      ],
+      "y": [
+        0.19221808995212575
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(31, 119, 180)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -15.467463055207757,
+        12.28287930078079,
+        9.302939733911506,
+        -15.467463055207757
+      ],
+      "y": [
+        5.415941528807785,
+        8.808138355994783,
+        12.958890394318638,
+        5.415941528807785
+      ],
+      "mode": "lines",
+      "line": {
+        "color": "rgb(255, 127, 14)",
+        "width": 2
+      },
+      "name": "Route 2",
+      "hoverinfo": "name"
+    },
+    {
+      "x": [
+        -1.5922918772134835
+      ],
+      "y": [
+        7.112039942401284
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(255, 127, 14)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        10.792909517346148
+      ],
+      "y": [
+        10.883514375156711
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(255, 127, 14)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -3.0822616606481255
+      ],
+      "y": [
+        9.187415961563211
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(255, 127, 14)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -15.467463055207757,
+        8.041665588991664,
+        13.352544960977433,
+        -15.467463055207757
+      ],
+      "y": [
+        5.415941528807785,
+        7.627616393594265,
+        4.389351919958786,
+        5.415941528807785
+      ],
+      "mode": "lines",
+      "line": {
+        "color": "rgb(44, 160, 44)",
+        "width": 2
+      },
+      "name": "Route 3",
+      "hoverinfo": "name"
+    },
+    {
+      "x": [
+        -3.7128987331080463
+      ],
+      "y": [
+        6.521778961201026
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(44, 160, 44)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        10.697105274984548
+      ],
+      "y": [
+        6.008484156776525
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(44, 160, 44)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -1.0574590471151621
+      ],
+      "y": [
+        4.902646724383286
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(44, 160, 44)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -15.467463055207757,
+        10.558658940546144,
+        11.623433848384279,
+        -15.467463055207757
+      ],
+      "y": [
+        5.415941528807785,
+        -3.611578512181918,
+        0.09021959233876017,
+        5.415941528807785
+      ],
+      "mode": "lines",
+      "line": {
+        "color": "rgb(214, 39, 40)",
+        "width": 2
+      },
+      "name": "Route 4",
+      "hoverinfo": "name"
+    },
+    {
+      "x": [
+        -2.4544020573308067
+      ],
+      "y": [
+        0.9021815083129336
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(214, 39, 40)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        11.091046394465211
+      ],
+      "y": [
+        -1.760679459921579
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(214, 39, 40)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -1.9220146034117391
+      ],
+      "y": [
+        2.753080560573273
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(214, 39, 40)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -15.467463055207757,
+        6.871166830005118,
+        6.591127196914235,
+        -15.467463055207757
+      ],
+      "y": [
+        5.415941528807785,
+        -6.009438132557107,
+        0.6578255230530361,
+        5.415941528807785
+      ],
+      "mode": "lines",
+      "line": {
+        "color": "rgb(148, 103, 189)",
+        "width": 2
+      },
+      "name": "Route 5",
+      "hoverinfo": "name"
+    },
+    {
+      "x": [
+        -4.29814811260132
+      ],
+      "y": [
+        -0.29674830187466084
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(148, 103, 189)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        6.731147013459676
+      ],
+      "y": [
+        -2.6758063047520353
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(148, 103, 189)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -4.438167929146761
+      ],
+      "y": [
+        3.0368835259304108
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(148, 103, 189)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -15.467463055207757,
+        1.755490549952241,
+        4.308964832914387,
+        -15.467463055207757
+      ],
+      "y": [
+        5.415941528807785,
+        -3.619304110856082,
+        -7.9949906669599375,
+        5.415941528807785
+      ],
+      "mode": "lines",
+      "line": {
+        "color": "rgb(140, 86, 75)",
+        "width": 2
+      },
+      "name": "Route 6",
+      "hoverinfo": "name"
+    },
+    {
+      "x": [
+        -6.855986252627758
+      ],
+      "y": [
+        0.8983187089758515
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(140, 86, 75)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        3.032227691433314
+      ],
+      "y": [
+        -5.80714738890801
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(140, 86, 75)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -5.5792491111466855
+      ],
+      "y": [
+        -1.2895245690760762
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(140, 86, 75)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -15.467463055207757,
+        -1.4581549142858126,
+        -1.1941224269865376,
+        -15.467463055207757
+      ],
+      "y": [
+        5.415941528807785,
+        -8.437173155716193,
+        3.717040019292567,
+        5.415941528807785
+      ],
+      "mode": "lines",
+      "line": {
+        "color": "rgb(227, 119, 194)",
+        "width": 2
+      },
+      "name": "Route 7",
+      "hoverinfo": "name"
+    },
+    {
+      "x": [
+        -8.462808984746784
+      ],
+      "y": [
+        -1.510615813454204
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(227, 119, 194)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -1.326138670636175
+      ],
+      "y": [
+        -2.3600665682118134
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(227, 119, 194)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -8.330792741097147
+      ],
+      "y": [
+        4.566490774050176
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(227, 119, 194)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -15.467463055207757,
+        -5.937720861436585,
+        -4.268053388367796,
+        -15.467463055207757
+      ],
+      "y": [
+        5.415941528807785,
+        -5.604082640894357,
+        -0.6252070320980665,
+        5.415941528807785
+      ],
+      "mode": "lines",
+      "line": {
+        "color": "rgb(127, 127, 127)",
+        "width": 2
+      },
+      "name": "Route 8",
+      "hoverinfo": "name"
+    },
+    {
+      "x": [
+        -10.70259195832217
+      ],
+      "y": [
+        -0.09407055604328596
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(127, 127, 127)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -5.102887124902191
+      ],
+      "y": [
+        -3.114644836496212
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(127, 127, 127)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -9.867758221787776
+      ],
+      "y": [
+        2.3953672483548596
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(127, 127, 127)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -15.467463055207757,
+        -9.775657061418451,
+        -7.683084150618362,
+        -15.467463055207757
+      ],
+      "y": [
+        5.415941528807785,
+        0.47105990450938046,
+        -8.13005981539072,
+        5.415941528807785
+      ],
+      "mode": "lines",
+      "line": {
+        "color": "rgb(188, 189, 34)",
+        "width": 2
+      },
+      "name": "Route 9",
+      "hoverinfo": "name"
+    },
+    {
+      "x": [
+        -12.621560058313104
+      ],
+      "y": [
+        2.943500716658583
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(188, 189, 34)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -8.729370606018406
+      ],
+      "y": [
+        -3.8294999554406695
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(188, 189, 34)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -11.57527360291306
+      ],
+      "y": [
+        -1.3570591432914672
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(188, 189, 34)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -15.467463055207757,
+        -13.85703263493312,
+        -10.376456253101182,
+        -15.467463055207757
+      ],
+      "y": [
+        5.415941528807785,
+        -0.5486551269941008,
+        5.475910910684014,
+        5.415941528807785
+      ],
+      "mode": "lines",
+      "line": {
+        "color": "rgb(23, 190, 207)",
+        "width": 2
+      },
+      "name": "Route 10",
+      "hoverinfo": "name"
+    },
+    {
+      "x": [
+        -14.66224784507044
+      ],
+      "y": [
+        2.4336432009068423
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(23, 190, 207)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -12.11674444401715
+      ],
+      "y": [
+        2.463627891844957
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(23, 190, 207)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    },
+    {
+      "x": [
+        -12.92195965415447
+      ],
+      "y": [
+        5.4459262197459
+      ],
+      "mode": "markers",
+      "marker": {
+        "size": 6,
+        "color": "rgb(23, 190, 207)",
+        "symbol": "triangle-right"
+      },
+      "showlegend": false,
+      "hoverinfo": "skip"
+    }
+  ],
+  "layout": {
+    "title": {
+      "text": "VRPSPD Routes Visualization",
+      "font": {
+        "size": 18
+      }
+    },
+    "xaxis": {
+      "title": "X Coordinate",
+      "showgrid": true,
+      "zeroline": false
+    },
+    "yaxis": {
+      "title": "Y Coordinate",
+      "showgrid": true,
+      "zeroline": false,
+      "scaleanchor": "x",
+      "scaleratio": 1
+    },
+    "hovermode": "closest",
+    "showlegend": true,
+    "legend": {
+      "x": 1.02,
+      "y": 1,
+      "xanchor": "left"
+    },
+    "plot_bgcolor": "white",
+    "paper_bgcolor": "white"
+  }
+}

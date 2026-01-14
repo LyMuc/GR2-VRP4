@@ -1,0 +1,171 @@
+/* Custom CSS for VRPSPD Solver */
+
+body {
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+}
+
+.card-header {
+    font-weight: 600;
+}
+
+.result-table {
+    margin-top: 15px;
+}
+
+.route-detail {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-left: 4px solid #0d6efd;
+    border-radius: 4px;
+}
+
+.route-detail h6 {
+    margin-bottom: 5px;
+    color: #0d6efd;
+}
+
+.route-detail p {
+    margin-bottom: 3px;
+    font-size: 0.9rem;
+}
+
+#plotContainer {
+    background-color: white;
+    border-radius: 8px;
+    min-height: 500px;
+    padding: 10px;
+}
+
+#plotContainer .text-muted {
+    line-height: 500px;
+}
+
+/* Plotly adjustments */
+.js-plotly-plot {
+    width: 100% !important;
+}
+
+.comparison-table {
+    font-size: 0.95rem;
+}
+
+.comparison-table th {
+    background-color: #e9ecef;
+}
+
+.badge-improvement {
+    font-size: 0.85rem;
+}
+
+/* Loading spinner */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+.fa-spinner.fa-spin {
+    animation: spin 1s linear infinite;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .col-md-4, .col-md-8 {
+        margin-bottom: 20px;
+    }
+}
+
+/* Fullscreen Modal */
+.fullscreen-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.95);
+    overflow: hidden;
+}
+
+.fullscreen-modal.show {
+    display: block;
+    animation: fadeIn 0.3s;
+}
+
+.fullscreen-modal-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+
+.fullscreen-modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #17a2b8;
+}
+
+.fullscreen-modal-header h4 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.btn-close-fullscreen {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+    padding: 0;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: all 0.3s;
+}
+
+.btn-close-fullscreen:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    transform: rotate(90deg);
+}
+
+#plotContainerFullscreen {
+    background-color: white;
+    border-radius: 8px;
+    padding: 10px;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+/* Collapse button animation */
+button[data-bs-toggle="collapse"] i {
+    transition: transform 0.3s ease;
+}
+
+button[data-bs-toggle="collapse"]:not(.collapsed) i {
+    transform: rotate(180deg);
+}
+
+button[data-bs-toggle="collapse"].collapsed i {
+    transform: rotate(0deg);
+}
