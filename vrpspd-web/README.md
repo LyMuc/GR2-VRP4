@@ -98,13 +98,13 @@ vrpspd-web/
 
 ## ✨ Tính năng hiện tại
 
-✅ Upload và parse file txt  
-✅ Chạy thuật toán Savings  
-✅ Chạy thuật toán VND  
-✅ Hiển thị kết quả và so sánh  
-✅ Hiển thị chi tiết các tuyến  
-✅ Giao diện responsive với Bootstrap  
-✅ **Visualization với Plotly.js** (NEW!)
+ Upload và parse file txt  
+ Chạy thuật toán Savings  
+ Chạy thuật toán VND  
+ Hiển thị kết quả và so sánh  
+ Hiển thị chi tiết các tuyến  
+ Giao diện responsive với Bootstrap  
+ **Visualization với Plotly.js** (NEW!)
   - MDS transformation (cost matrix → 2D coordinates)
   - Interactive graph (zoom, pan, hover)
   - Color-coded routes với direction indicators

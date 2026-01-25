@@ -8,9 +8,24 @@ import json
 from werkzeug.utils import secure_filename
 import traceback
 
+# ============================================================================
+# STEP 1: Import core algorithms and file parser
+# ============================================================================
 from algorithms import read_vrpspd_file, solve_savings, solve_vnd
+
+# ============================================================================
+# STEP 2: Import visualization module
+# ============================================================================
 from algorithms.visualization import create_plotly_data, create_plotly_figure_json
+
+# ============================================================================
+# STEP 3: Import Excel export module
+# ============================================================================
 from algorithms.excel_export import create_excel_report
+
+# ============================================================================
+# STEP 4: Import batch processing modules
+# ============================================================================
 from algorithms.batch_processor import process_batch_files, create_batch_summary
 from algorithms.batch_excel_export import create_batch_excel_report
 
@@ -24,6 +39,10 @@ ALLOWED_EXTENSIONS = {'txt'}
 def allowed_file(filename):
     return '.' in filename and filename.rsplit('.', 1)[1].lower() in ALLOWED_EXTENSIONS
 
+
+# ============================================================================
+# STEP 1: Basic routes - Index and Upload
+# ============================================================================
 
 @app.route('/')
 def index():
@@ -87,6 +106,11 @@ def upload_file():
         })
 
 
+# ============================================================================
+# STEP 1: Solve endpoint (basic version - returns results only)
+# STEP 2: Updated to include visualization data
+# ============================================================================
+
 @app.route('/api/solve', methods=['POST'])
 def solve():
     """
@@ -136,7 +160,9 @@ def solve():
             vnd_result = solve_vnd(initial_vector, cost_matrix, demand, pickup, capacity, max_time_seconds=60)
             results['vnd'] = vnd_result
         
-        # Generate visualization data for best result
+        # ========================================================================
+        # STEP 2: Generate visualization data
+        # ========================================================================
         best_result = results.get('vnd') or results.get('savings')
         if best_result:
             visualization_data = create_plotly_data(best_result['routes'], cost_matrix, demand, pickup)
@@ -152,7 +178,7 @@ def solve():
                 'num_vehicles': num_vehicles,
                 'capacity': capacity
             },
-            'visualization': plotly_figure
+            'visualization': plotly_figure  # STEP 2: Return visualization data
         })
     
     except Exception as e:
@@ -162,6 +188,10 @@ def solve():
             'traceback': traceback.format_exc()
         })
 
+
+# ============================================================================
+# STEP 3: Excel Export endpoint
+# ============================================================================
 
 @app.route('/api/export-excel', methods=['POST'])
 def export_excel():
@@ -200,6 +230,10 @@ def export_excel():
             'traceback': traceback.format_exc()
         })
 
+
+# ============================================================================
+# STEP 4: Batch Processing endpoints
+# ============================================================================
 
 @app.route('/api/batch-upload', methods=['POST'])
 def batch_upload():

@@ -1,44 +1,61 @@
+// ============================================
 // VRPSPD Solver - Main JavaScript
+// ============================================
 
+// ============================================
+// STEP 1: Global Variables
+// ============================================
 let currentFilepath = null;
 let currentResults = null;
-let currentVisualization = null;
 let currentProblemInfo = null; // Store problem info for export
+
+// STEP 2: Visualization Variables
+let currentVisualization = null;
+
+// STEP 4: Batch Processing Variables
 let currentMode = 'single'; // 'single' or 'batch'
 let batchFiles = []; // Store batch uploaded files
 let batchResults = null; // Store batch results
 
-// DOM Elements
+// ============================================
+// STEP 1: DOM Elements
+// ============================================
 const fileInput = document.getElementById('fileInput');
+const solveBtn = document.getElementById('solveBtn');
+const solveBtnText = document.getElementById('solveBtnText');
+const loadingIndicator = document.getElementById('loadingIndicator');
+const resultsContainer = document.getElementById('resultsContainer');
+const problemInfo = document.getElementById('problemInfo');
+const singleModeResults = document.getElementById('singleModeResults');
+
+// STEP 2: Visualization DOM Elements
+const fullscreenBtn = document.getElementById('fullscreenBtn');
+const fullscreenModal = document.getElementById('fullscreenModal');
+const closeFullscreenBtn = document.getElementById('closeFullscreenBtn');
+
+// STEP 3: Export DOM Elements
+const exportBtn = document.getElementById('exportBtn');
+const exportBtnText = document.getElementById('exportBtnText');
+
+// STEP 4: Batch Processing DOM Elements
 const batchFileInput = document.getElementById('batchFileInput');
 const modeSingle = document.getElementById('modeSingle');
 const modeBatch = document.getElementById('modeBatch');
 const singleFileUpload = document.getElementById('singleFileUpload');
 const batchFileUpload = document.getElementById('batchFileUpload');
 const batchFileList = document.getElementById('batchFileList');
-const singleModeResults = document.getElementById('singleModeResults');
 const batchResultsDiv = document.getElementById('batchResults');
 const batchResultsContainer = document.getElementById('batchResultsContainer');
 const batchLoadingIndicator = document.getElementById('batchLoadingIndicator');
 const batchProgress = document.getElementById('batchProgress');
-const solveBtn = document.getElementById('solveBtn');
-const solveBtnText = document.getElementById('solveBtnText');
-const exportBtn = document.getElementById('exportBtn');
-const exportBtnText = document.getElementById('exportBtnText');
-const loadingIndicator = document.getElementById('loadingIndicator');
-const resultsContainer = document.getElementById('resultsContainer');
-const problemInfo = document.getElementById('problemInfo');
-const fullscreenBtn = document.getElementById('fullscreenBtn');
-const fullscreenModal = document.getElementById('fullscreenModal');
-const closeFullscreenBtn = document.getElementById('closeFullscreenBtn');
 
-// Event Listeners
+// ============================================
+// STEP 1: Event Listeners
+// ============================================
 fileInput.addEventListener('change', handleFileUpload);
-batchFileInput.addEventListener('change', handleBatchFileUpload);
-modeSingle.addEventListener('change', handleModeChange);
-modeBatch.addEventListener('change', handleModeChange);
 solveBtn.addEventListener('click', handleSolve);
-exportBtn.addEventListener('click', handleExport);
+
+// STEP 2: Visualization Event Listeners
 fullscreenBtn.addEventListener('click', openFullscreen);
 closeFullscreenBtn.addEventListener('click', closeFullscreen);
 
@@ -49,7 +66,17 @@ document.addEventListener('keydown', (e) => {
     }
 });
 
-// File Upload Handler
+// STEP 3: Export Event Listener
+exportBtn.addEventListener('click', handleExport);
+
+// STEP 4: Batch Processing Event Listeners
+batchFileInput.addEventListener('change', handleBatchFileUpload);
+modeSingle.addEventListener('change', handleModeChange);
+modeBatch.addEventListener('change', handleModeChange);
+
+// ============================================
+// STEP 1: File Upload Handler
+// ============================================
 async function handleFileUpload(event) {
     const file = event.target.files[0];
     if (!file) return;
@@ -91,21 +118,24 @@ async function handleFileUpload(event) {
     }
 }
 
-// Solve Handler
+// ============================================
+// STEP 1: Solve Handler (Single Mode)
+// STEP 4: Extended for Batch Mode
+// ============================================
 async function handleSolve() {
-    // Check mode
+    // STEP 4: Check mode
     if (currentMode === 'batch') {
         await handleBatchSolve();
         return;
     }
     
-    // Single mode
+    // STEP 1: Single mode
     if (!currentFilepath) {
         showNotification('Please upload a file first', 'warning');
         return;
     }
 
-    // Get selected algorithms
+    // STEP 1: Get selected algorithms
     const algorithms = [];
     if (document.getElementById('algoSavings').checked) {
         algorithms.push('savings');
@@ -137,17 +167,19 @@ async function handleSolve() {
         const result = await response.json();
 
         if (result.success) {
+            // STEP 1: Store results and display
             currentResults = result.results;
             currentProblemInfo = result.problem_info; // Store problem info
             displayResults(result.results, result.problem_info);
             
-            // Render visualization if available
+            // STEP 2: Render visualization if available
             if (result.visualization) {
                 currentVisualization = result.visualization;
                 renderVisualization(result.visualization);
                 fullscreenBtn.style.display = 'inline-block'; // Show fullscreen button
             }
             
+            // STEP 3: Enable export button
             exportBtn.disabled = false;
             showNotification('Solved successfully!', 'success');
         } else {
@@ -162,7 +194,9 @@ async function handleSolve() {
     }
 }
 
-// Display Results
+// ============================================
+// STEP 1: Display Results
+// ============================================
 function displayResults(results, problemInfo) {
     let html = '';
 
@@ -271,15 +305,18 @@ function displayResults(results, problemInfo) {
     // renderVisualization(bestResult);
 }
 
-// Export to Excel Handler
+// ============================================
+// STEP 3: Export to Excel Handler
+// STEP 4: Extended for Batch Mode
+// ============================================
 async function handleExport() {
-    // Check mode
+    // STEP 4: Check mode
     if (currentMode === 'batch') {
         await handleBatchExport();
         return;
     }
     
-    // Single mode
+    // STEP 3: Single mode
     if (!currentResults) {
         showNotification('No results to export', 'warning');
         return;
@@ -329,7 +366,9 @@ async function handleExport() {
     }
 }
 
-// Batch Export Handler
+// ============================================
+// STEP 4: Batch Export Handler
+// ============================================
 async function handleBatchExport() {
     if (!batchResults) {
         showNotification('No batch results to export', 'warning');
@@ -380,7 +419,9 @@ async function handleBatchExport() {
     }
 }
 
-// Notification Helper
+// ============================================
+// STEP 1: Notification Helper
+// ============================================
 function showNotification(message, type = 'info') {
     const alertDiv = document.createElement('div');
     alertDiv.className = `alert alert-${type} alert-dismissible fade show position-fixed top-0 start-50 translate-middle-x mt-3`;
@@ -396,7 +437,9 @@ function showNotification(message, type = 'info') {
     }, 5000);
 }
 
-// Visualization with Plotly
+// ============================================
+// STEP 2: Visualization with Plotly
+// ============================================
 function renderVisualization(plotlyFigure) {
     const plotContainer = document.getElementById('plotContainer');
     
@@ -427,7 +470,9 @@ function renderVisualization(plotlyFigure) {
         });
 }
 
-// Fullscreen Functions
+// ============================================
+// STEP 2: Fullscreen Functions
+// ============================================
 function openFullscreen() {
     if (!currentVisualization) {
         showNotification('No visualization to display', 'warning');
@@ -475,7 +520,9 @@ function closeFullscreen() {
     }
 }
 
-// Mode Change Handler
+// ============================================
+// STEP 4: Mode Change Handler
+// ============================================
 function handleModeChange() {
     currentMode = modeSingle.checked ? 'single' : 'batch';
     
@@ -506,7 +553,9 @@ function handleModeChange() {
     }
 }
 
-// Batch File Upload Handler
+// ============================================
+// STEP 4: Batch File Upload Handler
+// ============================================
 async function handleBatchFileUpload(event) {
     const files = event.target.files;
     if (!files || files.length === 0) return;
@@ -539,7 +588,9 @@ async function handleBatchFileUpload(event) {
     }
 }
 
-// Display Batch File List
+// ============================================
+// STEP 4: Display Batch File List
+// ============================================
 function displayBatchFileList(files) {
     if (files.length === 0) {
         batchFileList.innerHTML = '';
@@ -555,7 +606,9 @@ function displayBatchFileList(files) {
     batchFileList.innerHTML = html;
 }
 
-// Batch Solve Handler
+// ============================================
+// STEP 4: Batch Solve Handler
+// ============================================
 async function handleBatchSolve() {
     if (batchFiles.length === 0) {
         showNotification('Chưa có file nào để xử lý', 'warning');
@@ -607,7 +660,9 @@ async function handleBatchSolve() {
     }
 }
 
-// Display Batch Results
+// ============================================
+// STEP 4: Display Batch Results
+// ============================================
 function displayBatchResults(results, summary) {
     let html = '';
     

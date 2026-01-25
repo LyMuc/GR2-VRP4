@@ -1,33 +1,33 @@
 # 🎉 VRPSPD Web Application - Complete!
 
-## ✅ Đã hoàn thành:
+## Đã hoàn thành:
 
-### Bước 1: Project Setup & Algorithm Refactoring ✅
-- ✅ Flask backend structure
-- ✅ Algorithm modules (Savings, VND)
-- ✅ File parser
-- ✅ Basic UI
+### Bước 1: Project Setup & Algorithm Refactoring 
+- Flask backend structure
+- Algorithm modules (Savings, VND)
+- File parser
+- Basic UI
 
-### Bước 2: Visualization ✅
-- ✅ MDS transformation
-- ✅ Plotly.js interactive graphs
-- ✅ 10 color-coded routes
-- ✅ Fullscreen modal
-- ✅ Collapsible route details
+### Bước 2: Visualization 
+-  MDS transformation
+-  Plotly.js interactive graphs
+-  10 color-coded routes
+-  Fullscreen modal
+-  Collapsible route details
 
-### Bước 3: Excel Export ✅
-- ✅ Single file Excel export
-- ✅ 3 sheets: Summary, Route Details, Comparison
-- ✅ Professional formatting
-- ✅ Auto download
+### Bước 3: Excel Export 
+-  Single file Excel export
+-  3 sheets: Summary, Route Details, Comparison
+-  Professional formatting
+-  Auto download
 
-### Bước 4: Batch Processing ✅
-- ✅ Multiple file upload
-- ✅ Batch solve với progress tracking
-- ✅ Batch results table
-- ✅ Master Excel export (3 sheets)
-- ✅ Summary statistics
-- ✅ Top performers ranking
+### Bước 4: Batch Processing 
+-  Multiple file upload
+-  Batch solve với progress tracking
+-  Batch results table
+-  Master Excel export (3 sheets)
+-  Summary statistics
+-  Top performers ranking
 
 ---
 
@@ -159,34 +159,34 @@ vrpspd-web/
 ## 🎨 Features:
 
 ### UI/UX:
-- ✅ Bootstrap 5 responsive design
-- ✅ Font Awesome icons
-- ✅ Loading indicators
-- ✅ Toast notifications
-- ✅ Fullscreen visualization modal
-- ✅ Collapsible sections
-- ✅ Mode switching (Single/Batch)
-- ✅ File list preview
+-  Bootstrap 5 responsive design
+-  Font Awesome icons
+-  Loading indicators
+-  Toast notifications
+-  Fullscreen visualization modal
+-  Collapsible sections
+-  Mode switching (Single/Batch)
+-  File list preview
 
 ### Visualization:
-- ✅ Interactive Plotly graphs
-- ✅ 10 color-coded routes
-- ✅ Hover tooltips
-- ✅ Zoom & Pan
-- ✅ Direction indicators (arrows)
-- ✅ Depot highlighted
-- ✅ Fullscreen mode (ESC to close)
+-  Interactive Plotly graphs
+-  10 color-coded routes
+-  Hover tooltips
+-  Zoom & Pan
+-  Direction indicators (arrows)
+-  Depot highlighted
+-  Fullscreen mode (ESC to close)
 
 ### Algorithms:
-- ✅ Clarke-Wright Savings heuristic
-- ✅ VND with 5 neighborhood structures:
+-  Clarke-Wright Savings heuristic
+-  VND with 5 neighborhood structures:
   - Swap(1,1) inter-route
   - Relocate inter-route
   - Shift(2,0) inter-route
   - Swap(2,1) inter-route
   - Swap(2,2) inter-route
-- ✅ Intra-route optimization
-- ✅ Feasibility checking (capacity + pickup/delivery)
+-  Intra-route optimization
+-  Feasibility checking (capacity + pickup/delivery)
 
 ---
 

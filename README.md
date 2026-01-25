@@ -4,18 +4,22 @@
 To study, implement and analyze the Vehicle Routing Problem with Simultaneous Pickup and Delivery. The goal is to find the best routes for a fleet of vehicles visiting a set of locations which also involves collection and distribution of goods from these locations. The problem focuses on minimizing the cost of function for the vehicles (minimizing distance travelled).
 
 ### Key elements in the Project:
+ - Implemented Vehicle Routing Problem with Simultaneous Pickup and Delivery with Saving-based algorithm and Variable Neighborhood Descent (VND)
+ - Executable Code in PuLP and Gurobi which solves the Vehicle Routing Problem with Simultaneous Pickup and Delivery.
+ - Test results on Christofides-Eilon datasets (7 datasets)
+ - Implement web app to visualize the routes and summarize the results in Excel format.
 
- - Implemented and analyzed two formulations of Capacity Vehicle Routing problem.
- - Implemented Vehicle Routing Problem with Simultaneous Pickup and Delivery
- - Executable Code in PuLP and Gurobi which solves the Vehicle Routing Problem with Simultaneous Pickup and Delivery and Capacity Vehicle Routing problem.
- - Test results on various datasets. (Both Randomly generated and available datasets).
- - Comparative results using Google OR tools.
+### Branch Structure
+- GUROBI: using gurobipy to solve VRPSPD.
+- Images: Image to visualize route using matplotlib
+- Others: The inital implement of CVRP and VRPSPD
+- Pulp: Implement 30% Saving + VND
+- vrpspd-web: VRPSPD solver web app
+- Saving_based_algo.ipynb: Completed saving-based algorithm with VND improvement.
+- VRP_SPD_Gurobi.ipynb: Completed vrpspd solver by gurobipy
+- SALS+VND.ipynb: Incompleted implementation of SALS with VND improvment.
 
 ### Reference Papers and Datasets:
-1.  [A generalized formulation for vehicle routing problems](https://arxiv.org/pdf/1606.01935.pdf) by Pedro Munari, Twan Dollevoet and Remy Spliet.
-    
-2.  [Integer linear programming formulation for a vehicle routing problem](https://doi.org/10.1016/0377-2217(91)90338-V) by N.R. Achuthan and L. Cacceta.
-    
-3.  [Vehicle Routing Problem with Deliveries and Pickups: Modelling Issues and Meta-heuristics Solution Approaches](https://core.ac.uk/download/pdf/19477982.pdf)  by Niaz A. Wassan and Gabor Nagy.
-4. [Christofides-Eilon VRP instances](http://neo.lcc.uma.es/vrp/vrp-instances/capacitated-vrp-instances/)-Dataset.
+0. [Dataset and results in Google Drive Folder](https://drive.google.com/drive/folders/1knm0SPPjOJLJqQ3E21SnsgqdUfnHOc5h?usp=drive_link)
+1.  [Reference paper folder in Google Drive Folder](https://drive.google.com/drive/folders/1VnHTGp4TN8iLqGcx9ttCzeiYa2hSnL-Q?usp=drive_link) 
 
