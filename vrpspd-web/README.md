@@ -2,7 +2,7 @@
 
 Web application để giải bài toán **Vehicle Routing Problem with Simultaneous Pickup and Delivery (VRPSPD)** sử dụng thuật toán Clarke-Wright Savings và Variable Neighborhood Descent (VND).
 
-## 🚀 Cài đặt
+## Cài đặt
 
 ### Bước 1: Clone hoặc tải project
 
@@ -28,7 +28,7 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## 🎯 Chạy ứng dụng
+## Chạy ứng dụng
 
 ```bash
 python app.py
@@ -36,7 +36,7 @@ python app.py
 
 Mở trình duyệt và truy cập: `http://localhost:5000`
 
-## 📂 Cấu trúc Project
+## Cấu trúc Project
 
 ```
 vrpspd-web/
@@ -59,7 +59,7 @@ vrpspd-web/
 └── README.md
 ```
 
-## 📝 Hướng dẫn sử dụng
+## Hướng dẫn sử dụng
 
 ### 1. Upload File
 
@@ -92,11 +92,11 @@ vrpspd-web/
 - Click "Giải bài toán"
 - Xem kết quả: chi phí, thời gian, các tuyến đường
 
-### 4. Xuất Excel (Đang phát triển)
+### 4. Xuất Excel
 
 - Click "Xuất Excel" để tải file kết quả
 
-## ✨ Tính năng hiện tại
+## Tính năng 
 
  Upload và parse file txt  
  Chạy thuật toán Savings  
@@ -104,20 +104,16 @@ vrpspd-web/
  Hiển thị kết quả và so sánh  
  Hiển thị chi tiết các tuyến  
  Giao diện responsive với Bootstrap  
- **Visualization với Plotly.js** (NEW!)
+ **Visualization với Plotly.js** 
   - MDS transformation (cost matrix → 2D coordinates)
   - Interactive graph (zoom, pan, hover)
   - Color-coded routes với direction indicators
   - Tooltips hiển thị delivery/pickup info
+  - Xuất Excel với nhiều sheet  
+  - Upload multiple files    
+  - So sánh nhiều instance  
 
-## 🔜 Tính năng đang phát triển
-
-🔨 Xuất Excel với nhiều sheet  
-🔨 Upload multiple files  
-🔨 Thêm điểm thủ công  
-🔨 So sánh nhiều instance  
-
-## 🛠️ Tech Stack
+## Tech Stack
 
 - **Backend**: Flask (Python 3.8+)
 - **Frontend**: HTML, Bootstrap 5, JavaScript
@@ -125,7 +121,7 @@ vrpspd-web/
 - **Visualization**: Plotly.js (planned)
 - **Excel Export**: openpyxl, pandas (planned)
 
-## 📚 Format File Input
+## Format File Input
 
 File txt phải có format:
 - **Cost matrix**: Ma trận chi phí di chuyển (n×n)
@@ -133,7 +129,7 @@ File txt phải có format:
 - **Pick-up quantities**: Lượng hàng cần nhận từ mỗi khách hàng
 - **Vehicle capacity**: Tải trọng của mỗi xe
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Lỗi: ModuleNotFoundError
 ```bash
@@ -146,11 +142,3 @@ Sửa trong `app.py`:
 app.run(debug=True, host='0.0.0.0', port=5001)
 ```
 
-## 📧 Contact
-
-Nếu có vấn đề hoặc câu hỏi, hãy tạo issue trên GitHub.
-
----
-
-**Phiên bản**: 1.0.0 (Beta)  
-**Ngày cập nhật**: January 2026
