@@ -1,4 +1,4 @@
-# 🎉 VRPSPD Web Application - Complete!
+# VRPSPD Web Application - Complete!
 
 ## Đã hoàn thành:
 
@@ -31,7 +31,7 @@
 
 ---
 
-## 🚀 Cách sử dụng:
+## Cách sử dụng:
 
 ### Server đang chạy tại:
 ```
@@ -91,7 +91,7 @@ http://192.168.1.9:5000
 
 ---
 
-## 📁 Project Structure:
+## Project Structure:
 
 ```
 vrpspd-web/
@@ -142,7 +142,7 @@ vrpspd-web/
 
 ---
 
-## 📊 Excel Format:
+## Excel Format:
 
 ### Single File Export:
 1. **Summary Sheet**: Problem info + Results comparison
@@ -156,7 +156,7 @@ vrpspd-web/
 
 ---
 
-## 🎨 Features:
+## Features:
 
 ### UI/UX:
 -  Bootstrap 5 responsive design
@@ -217,36 +217,4 @@ python test_batch_excel.py
 
 ---
 
-## 🔮 Bước 5 (Optional - Tương lai):
 
-### Manual Point Addition:
-- Add new customer manually
-- Input: Location, Delivery, Pickup
-- Update routes dynamically
-- Re-optimize
-
-### Advanced Features:
-- Map integration (Google Maps API)
-- Real-time route optimization
-- Route animation
-- Export to PDF
-- Historical data tracking
-- Performance analytics dashboard
-
----
-
-## 📝 Notes:
-
-- VND timeout: 60 seconds per file
-- Max file upload: 16MB
-- Supports .txt format only (VRPSPD format)
-- Debug mode enabled (for development)
-- Use WSGI server for production (e.g., Gunicorn)
-
----
-
-## ✨ All Features Working!
-
-Bạn có thể test ngay tại: **http://127.0.0.1:5000**
-
-Mọi thứ đã hoàn chỉnh và sẵn sàng sử dụng! 🎊
