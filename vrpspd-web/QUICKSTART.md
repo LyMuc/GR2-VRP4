@@ -42,6 +42,9 @@ Mở trình duyệt và vào: **http://localhost:5000**
   - Zoom, pan, hover
   - Màu sắc khác nhau cho mỗi route
   - Customer IDs và delivery/pickup info
+- **Excel Export**: Xuất kết quả ra file Excel
+- **Batch Processing**: Upload nhiều file cùng lúc
+- **Best Known Solutions**: So sánh với BKS
 
 ## 🔧 Test với file mẫu
 
@@ -67,32 +70,3 @@ Pick-up quantities
 Vehicle capacity
 6000
 ```
-
-## ✅ Checklist
-
-- [x] Code Python đã refactor từ notebook
-- [x] Flask API hoạt động
-- [x] Giao diện web với Bootstrap
-- [x] Thuật toán Savings
-- [x] Thuật toán VND
-- [x] Hiển thị kết quả
-- [x] **Visualization với Plotly** ✨ NEW!
-- [x] MDS transformation (cost matrix → 2D)
-- [x] Interactive graph (zoom, pan, hover)
-- [x] Color-coded routes
-
-## 🔜 Next Steps
-
-Các tính năng sẽ implement tiếp:
-
-1. ~~**Visualization**: Vẽ routes trên graph với Plotly~~ ✅ **DONE!**
-2. **Excel Export**: Xuất kết quả ra file Excel
-3. **Batch Processing**: Upload nhiều file cùng lúc
-4. **Manual Input**: Thêm điểm thủ công
-5. **Best Known Solutions**: So sánh với BKS
-
----
-
-**Có vấn đề?** Check:
-- [README.md](README.md) - Hướng dẫn chi tiết
-- [VISUALIZATION_GUIDE.md](VISUALIZATION_GUIDE.md) - Chi tiết về visualization
